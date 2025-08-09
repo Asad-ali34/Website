@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My CS & Coding Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span class="name">[Your Name]</span></h1>
+      <p class="tagline">Computer Science • Coding • Programming</p>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I'm a computer science enthusiast interested in algorithms, web development,
+        and building useful tools with code. I like learning new languages and solving problems.
+      </p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Project One — <small>Short description</small></h3>
+        <p>What it does, technologies used (e.g., HTML, CSS, JavaScript, Python).</p>
+        <p class="small">Repo: <a href="#" target="_blank">github.com/yourname/project-one</a></p>
+      </div>
+
+      <div class="project">
+        <h3>Project Two — <small>Short description</small></h3>
+        <p>Another small description. Mention link/demo if available.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>If you want to reach me: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p class="small">Or find me on GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> <strong>[Your Name]</strong> — Built with ❤️ for code.</p>
+    </div>
+  </footer>
+
+  <script>
+    // put current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
